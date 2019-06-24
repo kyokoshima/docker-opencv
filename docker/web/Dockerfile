@@ -18,6 +18,8 @@ RUN apt-get update \
         libtiff-dev \
         libavformat-dev \
         libpq-dev \
+        libgtk2.0-dev \
+        pkg-config \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip install numpy
