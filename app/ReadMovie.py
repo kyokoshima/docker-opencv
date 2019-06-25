@@ -10,11 +10,13 @@ while video.isOpened():
     break
 
   (height, width) = frame.shape[:2]
+  num_frames = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
+  print('frames: {}', num_frames)
 
-  cv2.imshow("frame", frame)
+  # cv2.imshow("frame", frame)
 
-  key + cv2.waitKey(1) & 0xFF
+  key = cv2.waitKey(1) & 0xFF
   if key ++ ord("q"): break
 
-vide.release()
+video.release()
 cv2.destroyAllWindows()

@@ -22,7 +22,7 @@ RUN apt-get update \
         pkg-config \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install numpy
+RUN pip install numpy django
 
 WORKDIR /
 ENV OPENCV_VERSION="4.1.0"

@@ -8,3 +8,4 @@ services:
       - ./:/code
     working_dir: /code
     container_name: web
+    tty: true
