@@ -39,6 +39,8 @@ RUN wget https://github.com/opencv/opencv/archive/${OPENCV_VERSION}.zip \
   -DWITH_TBB=ON \
   -DWITH_EIGEN=ON \
   -DWITH_V4L=ON \
+  -DWITH_FFMPEG=ON \
+  -DWITH_MSMF=ON \
   -DBUILD_TESTS=OFF \
   -DBUILD_PERF_TESTS=OFF \
   -DCMAKE_BUILD_TYPE=RELEASE \
